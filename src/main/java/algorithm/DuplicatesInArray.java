@@ -13,7 +13,7 @@ public class DuplicatesInArray {
         String[] names = {"Java", "JavaScript", "Python", "C", "Ruby", "Java"};
 
         System.out.println(getMapDuplicate(names));
-//        System.out.println(getMapOfDuplicate(names));
+        System.out.println(getMapOfDuplicate(names));
     }
 
     public static boolean isDuplicatesPresent(int[] arrayToCheck) {
