@@ -33,14 +33,11 @@ public class TwoSum {
         // second way using a hashmap
         Map<Integer, Integer> mapNums = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            System.out.println("iiiii " + nums[i]);
             int complement = target - nums[i];
-            System.out.println("ooooo " + complement);
             if (mapNums.containsKey(complement)) {
                 return new int[]{mapNums.get(complement), i};
             }
             mapNums.put(nums[i], i);
-            System.out.println("ppppp " + mapNums);
         }
         throw new IllegalArgumentException("no match found!");
     }
